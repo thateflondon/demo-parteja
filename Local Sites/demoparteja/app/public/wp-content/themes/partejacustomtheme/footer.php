@@ -1,3 +1,8 @@
+<!-- <footer class="footer text-center py-2 theme-bg-dark">
+
+    <p class="copyright"><a href="https://jfpl.fr">Jerry Frederic</a></p>
+
+</footer> -->
 <?php
 wp_footer();
 ?>
