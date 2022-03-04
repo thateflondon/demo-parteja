@@ -7,6 +7,20 @@ function parteja_theme_support()
 
 add_action('after_setup_theme', 'parteja_theme_support');
 
+//dynamic menu
+function parteja_menus()
+{
+
+    $locations = array(
+        'primary' => "Desktop Primary Left Sidebar",
+        'footer' => "Footer Menu Items"
+    );
+
+    register_nav_menus($locations);
+}
+
+add_action('init', 'parteja_menus');
+
 
 //enqueue styles
 function parteja_register_styles()
