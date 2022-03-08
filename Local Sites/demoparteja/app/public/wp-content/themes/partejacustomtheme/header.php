@@ -36,6 +36,21 @@
 
             <div id="navigation" class="collapse navbar-collapse flex-column">
                 <img class="mb-3 mx-auto logo" src="images/logo.png" alt="logo">
+                <!-- dynamic menu render -->
+                <?php
+
+                wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => '',
+                        'theme_location' => 'primary',
+                        //set custom id and class to customize the items with css
+                        'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
+                        //to customize the li we need to go in wp dashboard->apparence-screenOptions->activate ccs classes/links target
+                    )
+                );
+
+                ?>
 
                 <ul class="navbar-nav flex-column text-sm-center text-md-left">
                     <li class="nav-item active">
