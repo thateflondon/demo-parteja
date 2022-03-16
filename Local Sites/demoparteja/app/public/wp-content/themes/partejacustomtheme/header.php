@@ -30,7 +30,7 @@
         <a class="site-title pt-lg-4 mb-0" href="index.html">
             <?php echo get_bloginfo('name'); ?>
         </a>
-
+        <!-- dynamic site title/dashboard->customize theme END -->
         <nav class="navbar navbar-expand-lg navbar-dark">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,6 +48,7 @@
                 ?>
 
                 <img class="mb-3 mx-auto logo" src="<?php echo $logo[0] ?>" alt="logo">
+                <!-- logo dynamic render END -->
 
                 <!-- dynamic menu render -->
                 <?php
@@ -62,8 +63,11 @@
                     )
                 );
                 ?>
+                <!-- dynamic menu render END -->
 
-                <ul class="navbar-nav flex-column text-sm-center text-md-left">
+                <!-- Sidebar menu -->
+                <!-- transform in pages in wp dashboard -->
+                <!-- <ul class="navbar-nav flex-column text-sm-center text-md-left">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -79,7 +83,8 @@
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" href="contact.html"><i class="fas fa-envelope fa-fw mr-2"></i>Contact Us</a>
                     </li>
-                </ul>
+                </ul> -->
+                <!-- Sidebar menu END -->
                 <hr>
                 <ul class="social-list list-inline py-3 mx-auto">
                     <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
