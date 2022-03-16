@@ -26,7 +26,10 @@
 <body>
 
     <header class="header text-center">
-        <a class="site-title pt-lg-4 mb-0" href="index.html">Parteja Blog</a>
+        <!-- dynamic site title/dashboard->customize theme -->
+        <a class="site-title pt-lg-4 mb-0" href="index.html">
+            <?php echo get_bloginfo('name'); ?>
+        </a>
 
         <nav class="navbar navbar-expand-lg navbar-dark">
 
@@ -35,10 +38,10 @@
             </button>
 
             <div id="navigation" class="collapse navbar-collapse flex-column">
-                <img class="mb-3 mx-auto logo" src="images/logo.png" alt="logo">
+                <img class="mb-3 mx-auto logo" src="/wp-content/themes/partejacustomtheme/theme-template/images/logo.png" alt="logo">
+
                 <!-- dynamic menu render -->
                 <?php
-
                 wp_nav_menu(
                     array(
                         'menu' => 'primary',
@@ -49,7 +52,6 @@
                         //to customize the li we need to go in wp dashboard->apparence-screenOptions->activate ccs classes/links target
                     )
                 );
-
                 ?>
 
                 <ul class="navbar-nav flex-column text-sm-center text-md-left">
