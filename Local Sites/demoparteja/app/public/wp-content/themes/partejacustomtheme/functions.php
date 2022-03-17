@@ -4,7 +4,7 @@ function parteja_theme_support()
 {
     add_theme_support('title-tag');
     add_theme_support('custom-logo'); //use the dashboard on wp->theme/customize to change logo settings
-    add_theme_support('post-thumbnails'); //use dashboard to access/ helps implement image in a post
+    add_theme_support('post-thumbnails'); //use dashboard to access/ helps implement image in a post and publish 
 }
 
 add_action('after_setup_theme', 'parteja_theme_support');
